@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">WyeroJR</a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tentangSaya.html">TENTANG SAYA</a></li>
+            <li class="dropdown">
+                <a href="#">ARTIKEL</a>
+                <div class="drop-content">
+                    <a href="artikel1.html">ARTIKEL 1</a>
+                    <a href="artikel2.html">ARTIKEL 2</a>
+                    <a href="artikel3.html">ARTIKEL 3</a>
+                </div>
+            </li>
+            <li class="active"><a href="kontak.html">KONTAK</a></li>
+        </ul>
+        <div class="menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="kontak">
+                <h1>Kontak Saya</h1>
+                <hr>
+                <form>
+                    <label for="nama">Nama</label><br>
+                    <input type="text" id="nama" placeholder="Nama Anda"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="Email Anda"><br>
+                    <label for="telp">Nomor Telepon</label><br>
+                    <input type="text" id="telp" placeholder="Nomor Telepon"><br>
+                    <label for="pesan">Pesan</label><br>
+                    <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea><br>
+                    <button>Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 Krisogonus Wiero Baba Kaju.</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

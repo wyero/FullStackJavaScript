@@ -84,7 +84,7 @@ nav ul{
     background-color: blue;
 }
 header{
-    background-image: url('/asset/img/wallpaper.jpg');
+    background-image: url('/img/background.jpg');
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -103,7 +103,7 @@ header h1{
 section{
     width: 100%;
     padding-bottom: 10px;    
-    background-image: url('/asset/img/wyero.jpeg');
+    background-image: url('/img/fotoSaya.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,12 +111,14 @@ section{
 .container{
     margin: auto;
     color: whitesmoke;
+    font-weight: bold;
     width: 70%;
     text-align: center;
 }
 .container h2{
     font-size: 2.5rem;
     padding-top: 20px;
+    margin: auto;
 }
 h3{
     margin: 10px 0;
@@ -151,19 +153,23 @@ footer{
     font-size: 18px;
 }
 .content2{
+    color: black;
     width: 70%;
     margin: 10px auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
     font-family: 'Lato', sans-serif;
 }
-.utama{
+.utama, .utama1{
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     color: whitesmoke;
     font-weight: bold;
     padding-top: 10px;
+}
+.utama1{
+    color: black;
 }
 .content2 p:last-of-type{
     padding: 10px 0;
@@ -172,7 +178,7 @@ footer{
 }
 table{
     margin: auto;
-    font-size: 18px;
+    font-size: 16px;
     font-family: serif;
     color: whitesmoke;
     background-color: #212530;
@@ -207,7 +213,7 @@ article{
     height: 500px;
 }
 .artikel1 p{
-    text-align: left;
+    text-align: justify;
 }
 .artikel1 ol{
     text-align: left;
@@ -275,37 +281,29 @@ button{
     .drop-content{
         display: block;
         position: relative;
-        margin-top: 15px ;
-        background-color: #212530;
-        width: 100%;
     }
-    .content {
+    .content ul, .content{
         width: 70%;
-        margin: auto;
-        text-align: left;
-        padding: 10px;
-        font-size: 20px;
-    }
-    .content ul{
-        padding-top: 10px;
-        width: 70%;
-        text-align: left;
-        margin: auto;
-        font-size: 17px;
     }
     .gambar{
         width: 100%;
         height: 400px;
     }
     .image{
-        text-align: center;
         width: 100%;
         height: 250px;
-        margin: auto;
     }
     .image img{
-        width: 100%;
         height: 250px;
+    }
+    .content2{
+        width: 100%;
+    }
+    .utama1{
+        color: black;
+    }
+    header h1{
+        font-size: 3rem;
     }
 }
 

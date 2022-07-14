@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Open+Sans:wght@700;800&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <main>
+            <h1>Pendaftaran</h1>
+            <form>
+                <div>
+                    <label for="namaDepan">Nama Depan</label><br>
+                    <input type="text" id="namaDepan" name="namaDepan"><br>
+                </div>
+                <div>
+                    <label for="namaBelakang">Nama Belakang</label><br>
+                    <input type="text" id="namaBelakang" name="namaBelakang"><br>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+                </div>
+                <div>
+                    <label for="nomorTlpn">Nomor Telepon</label><br>
+                    <input type="text" id="nomorTlpn" name="nomorTlpn"><br>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password"><br>
+                </div>
+                <div>
+                    <label for="ulang">Ulangi Password</label><br>
+                    <input type="password" name="ulangPassword" id="ulang"><br>
+                </div>
+                <button>Daftar</button>
+            </form>
+        </main>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="/form validasi/jquery/main.js"></script>
+</body>
+</html>

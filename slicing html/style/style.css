@@ -133,6 +133,11 @@ header .container .contact button {
   font-size: 16px;
   line-height: 28px;
   margin-left: 20px;
+  cursor: pointer;
+}
+header .container .contact button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 header .container .contact button img {
   width: 12px;
@@ -144,6 +149,7 @@ section {
   width: 100%;
   height: 863px;
   background-color: #4f535c;
+  overflow: hidden;
 }
 section nav {
   display: flex;
@@ -189,6 +195,10 @@ section nav ul li a {
   font-size: 14px;
   line-height: 24px;
 }
+section nav ul li a:hover {
+  color: #fe8c12;
+  transition: 0.5s;
+}
 section nav ul li .active {
   color: #fe8c12;
 }
@@ -198,8 +208,25 @@ section nav .search {
   justify-content: flex-end;
   width: 30%;
 }
-section nav .search img {
+section nav .search input {
+  margin-top: -5px;
+  padding: 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  width: 0;
+}
+section nav .search label {
+  margin-left: 4px;
+  cursor: pointer;
+}
+section nav .search label img {
   width: 25px;
+}
+section nav .search .search-open {
+  width: 200px;
+  padding: 7px;
 }
 section nav .line {
   width: 1px;
@@ -211,6 +238,7 @@ section nav .medsos {
   display: flex;
   align-items: center;
   padding-right: 15px;
+  cursor: pointer;
 }
 section nav .medsos .fb {
   display: flex;
@@ -223,6 +251,12 @@ section nav .medsos .fb {
   margin: 0 3px;
   background: #fe8c12;
 }
+section nav .medsos .fb:hover {
+  background-color: #fe8c12;
+  transition: 0.7s;
+  transform: scale(1.1);
+  z-index: 2px;
+}
 section nav .medsos .twitter {
   display: flex;
   justify-content: center;
@@ -232,6 +266,12 @@ section nav .medsos .twitter {
   height: 35px;
   border-radius: 35px;
   margin: 0 3px;
+}
+section nav .medsos .twitter:hover {
+  background-color: #00acee;
+  transition: 0.5s;
+  transform: scale(1.1);
+  z-index: 2px;
 }
 section nav .medsos .in {
   display: flex;
@@ -243,6 +283,12 @@ section nav .medsos .in {
   border-radius: 35px;
   margin: 0 3px;
 }
+section nav .medsos .in:hover {
+  background-color: #0e76a8;
+  transition: 0.5s;
+  transform: scale(1.1);
+  z-index: 2px;
+}
 section nav .medsos .ig {
   display: flex;
   justify-content: center;
@@ -253,12 +299,24 @@ section nav .medsos .ig {
   border-radius: 35px;
   margin: 0 3px;
 }
+section nav .medsos .ig:hover {
+  background-color: rgb(225, 48, 108);
+  transition: 0.5s;
+  transform: scale(1.1);
+  z-index: 2px;
+}
 section main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   height: 80%;
   margin: auto;
+}
+section main .content {
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
 }
 section main .content .content1 {
   font-family: "Open Sans", sans-serif;
@@ -268,6 +326,7 @@ section main .content .content1 {
   height: 26px;
   color: #fe8c12;
   text-transform: uppercase;
+  margin: 5px 10px;
 }
 section main .content .content2 {
   font-family: "Open Sans", sans-serif;
@@ -276,6 +335,7 @@ section main .content .content2 {
   font-size: 90px;
   line-height: 110px;
   text-transform: uppercase;
+  margin: 5px 6px;
 }
 section main .content .content3 {
   width: 706px;
@@ -285,6 +345,7 @@ section main .content .content3 {
   font-size: 24px;
   line-height: 34px;
   color: white;
+  margin: 5px 10px;
 }
 section main .content .btn {
   display: flex;
@@ -292,6 +353,7 @@ section main .content .btn {
   justify-content: space-between;
   margin-top: 25px;
   width: 245px;
+  margin-left: 15px;
 }
 section main .content .btn button {
   border: none;
@@ -305,6 +367,11 @@ section main .content .btn button {
   color: white;
   line-height: 28px;
   font-size: 15px;
+  cursor: pointer;
+}
+section main .content .btn button:hover {
+  opacity: 0.9;
+  transition: 0.5s;
 }
 section main .content .btn button img {
   margin-left: 7px;
@@ -319,8 +386,16 @@ section main .content .btn .msc {
   background-color: white;
 }
 section main .content .btn .msc img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 14px;
   height: 15.58px;
+}
+section main .content .btn .msc img:hover {
+  transform: scale(1.4);
+  z-index: 2px;
+  transition: 0.8s;
 }
 section main .content .arrow {
   width: 100%;
@@ -328,6 +403,7 @@ section main .content .arrow {
   justify-content: flex-end;
   align-items: center;
   margin-top: 50px;
+  cursor: pointer;
 }
 section main .content .arrow .left, section main .content .arrow .right {
   display: flex;
@@ -336,11 +412,34 @@ section main .content .arrow .left, section main .content .arrow .right {
   width: 35px;
   height: 35px;
   border-radius: 35px;
-  border: 1px solid #fe8c12;
+  border: 2px solid #fe8c12;
   margin-left: 5px;
 }
-section main .content .arrow .right {
-  background-color: #fe8c12;
+section main .content .arrow .left:hover, section main .content .arrow .right:hover {
+  transform: scale(1.1);
+  z-index: 2px;
+  transition: 0.5s;
+}
+section #content-slide1 {
+  background: url("../icon/bg-itachi3.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section #content-slide2 {
+  background: url("../icon/bg-itachi1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section #content-slide3 {
+  background: url("../icon/bg-itachi2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .menu1 {
@@ -473,6 +572,11 @@ section main .content .arrow .right {
 .menu1 .menu2 .utama3 .isi1 .first img, .menu1 .menu2 .utama3 .isi2 .first img {
   width: 30px;
   height: 30px;
+  transition: 0.8s;
+}
+.menu1 .menu2 .utama3 .isi1 .first img:hover, .menu1 .menu2 .utama3 .isi2 .first img:hover {
+  transform: scale(1.3);
+  z-index: 2px;
 }
 .menu1 .menu2 .utama3 .isi1 .second, .menu1 .menu2 .utama3 .isi2 .second {
   width: 70%;
@@ -520,6 +624,11 @@ section main .content .arrow .right {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
+}
+.menu1 .menu2 .btn1 button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 .menu1 .menu2 .btn1 button img {
   margin-left: 10px;
@@ -532,6 +641,11 @@ section main .content .arrow .right {
   width: 50px;
   height: 50px;
   border-radius: 50px;
+  cursor: pointer;
+}
+.menu1 .menu2 .btn1 .profile img:hover {
+  transform: scale(3);
+  transition: 0.8s;
 }
 .menu1 .menu2 .btn1 .nameCEO p:first-of-type {
   font-size: 14px;
@@ -592,6 +706,11 @@ section main .content .arrow .right {
   color: white;
   border-radius: 2px;
   border: none;
+  cursor: pointer;
+}
+.hal3 .isi1hal3 .is1 .latar button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
 }
 .hal3 .isi1hal3 .is1 .latar button img {
   margin-left: 7px;
@@ -637,8 +756,15 @@ section main .content .arrow .right {
   margin-top: 25px;
 }
 .hal3 .isi1hal3 .is2 .gb img {
+  display: flex;
+  align-items: center;
   width: 15px;
   height: 15px;
+  transition: 1s;
+}
+.hal3 .isi1hal3 .is2 .gb img:hover {
+  transform: scale(1.3);
+  z-index: 2px;
 }
 
 .hal4 {
@@ -686,6 +812,12 @@ section main .content .arrow .right {
   height: 370px;
   padding-top: 20px;
 }
+.hal4 .hal41 .gmbrs img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  z-index: 2px;
+  opacity: 0.7;
+}
 
 .hal5 {
   background: #0A0A0B;
@@ -693,6 +825,7 @@ section main .content .arrow .right {
   height: auto;
   padding-top: 100px;
   display: flex;
+  overflow: hidden;
 }
 .hal5 .isi20 {
   width: 90%;
@@ -770,7 +903,7 @@ section main .content .arrow .right {
 }
 
 footer {
-  background: #F5F5F5;
+  background: url("../icon/bg.jpg");
   width: 100%;
   height: auto;
 }
@@ -830,6 +963,23 @@ footer .footer1 .cntftr1 .back1 .mds .m1 {
   height: 40px;
   border-radius: 40px;
   background: #FFFFFF;
+  cursor: pointer;
+}
+footer .footer1 .cntftr1 .back1 .mds #ms1:hover {
+  background: #3b5998;
+  transition: 0.5s;
+}
+footer .footer1 .cntftr1 .back1 .mds #ms2:hover {
+  background: #00acee;
+  transition: 0.5s;
+}
+footer .footer1 .cntftr1 .back1 .mds #ms3:hover {
+  background: rgb(225, 48, 108);
+  transition: 0.5s;
+}
+footer .footer1 .cntftr1 .back1 .mds #ms4:hover {
+  background: #0e76a8;
+  transition: 0.5s;
 }
 footer .footer1 .cntftr2 {
   margin-left: 10px;
@@ -859,6 +1009,9 @@ footer .footer1 .cntftr2 .jdl2 .jdl21 a {
   font-size: 13px;
   line-height: 32px;
   width: 80px;
+}
+footer .footer1 .cntftr2 .jdl2 .jdl21 a:hover {
+  opacity: 0.8;
 }
 footer .footer1 .cntftr3 {
   margin-left: 10px;
@@ -964,6 +1117,10 @@ footer .foot ul li a {
   text-transform: uppercase;
   text-decoration: none;
   color: #0A0A0B;
+}
+footer .foot ul li a:hover {
+  transition: 0.3s;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1010px) {
@@ -1078,16 +1235,17 @@ footer .foot ul li a {
     transition: 1s;
     flex-direction: column;
     transition: 0.95s;
-    width: 200px;
   }
   section nav ul li {
-    background-color: #0A0A0B;
-    padding-top: 10x;
+    padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 38.5px;
+    width: 80%;
+    background: #0A0A0B;
   }
   section nav ul.slide {
-    left: 0;
+    width: 300px;
+    left: 48px;
+    padding: 0;
   }
   .menu1 .gambar1 img {
     width: 230px;
@@ -1127,11 +1285,14 @@ footer .foot ul li a {
     margin-bottom: 5px;
   }
   .menu1 .menu2 .btn1 {
-    width: 210px;
+    width: 250px;
     margin: 30px auto;
   }
-  .menu1 .menu2 .btn1 .nameCEO {
+  .menu1 .menu2 .btn1 .profile {
     display: none;
+  }
+  .menu1 .menu2 .btn1 .nameCEO {
+    margin-left: 10px;
   }
   .hal3 .isi1hal3 .is1 {
     width: 100%;
@@ -1164,6 +1325,8 @@ footer .foot ul li a {
     margin-right: 1px;
   }
   section main .content {
+    margin-top: 20px;
+    padding: 50px 0;
     width: 100%;
   }
   section main .content .content2 {
@@ -1195,15 +1358,7 @@ footer .foot ul li a {
     padding-bottom: 100px;
   }
   .hal5 .isi20 .kontent2 {
-    display: flex;
-    width: 80%;
-  }
-  .hal5 .isi20 .kontent2 img {
-    margin-left: auto;
-    margin-bottom: auto;
-    width: 100%;
-    height: 25vh;
-    border-radius: 100%;
+    display: none;
   }
   footer .footer1 .cntftr2 {
     margin-left: 80px;

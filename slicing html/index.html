@@ -45,6 +45,7 @@
        </div>
     </header>
     <section>
+        <div class="slide"></div>
         <nav>
             <div class="menu">
                 <div class="bar"></div>
@@ -58,7 +59,12 @@
                 <li><a href="#">news+</a></li>
                 <li><a href="#">contact us</a></li>
             </ul>
-            <div class="search"><a href="#"><img src="/slicing html/icon/search.png" alt="search"></div></a>
+            <div class="search">
+                <input type="search" placeholder="type here..." id="searching" class="input">
+                <label for="searching">
+                    <img src="/slicing html/icon/search.png" alt="search" class="searching">
+                </label>
+            </div>
             <div class="line">|</div>
             <div class="medsos">
                 <div class="fb"><a href="#"><img src="/slicing html/icon/fb.png" alt="facebook"></div></a>
@@ -68,7 +74,7 @@
             </div>
         </nav>
         <main>
-            <div class="content">
+            <div class="content" id="content-slide1">
                 <div class="content1">we're the best</div>
                 <div class="content2">provides export advice</div>
                 <div class="content3">Pellentesque convallis posuere leo faucibus mollis. Sed a laoreet augue. Etiam pretium sagittis tellus vitae consectetur.</div>
@@ -77,11 +83,43 @@
                         quote now
                         <img src="/slicing html/icon/panah.png" alt="panah">
                     </button>
-                    <div class="msc"><a href="#"><img src="/slicing html/icon/music.png" alt="music"></div></a>
+                    <div class="msc"><a href="https://youtu.be/QMkycqKDuWU"><img src="/slicing html/icon/music.png" alt="music"></div></a>
                 </div>
                 <div class="arrow">
-                    <div class="left"><img src="/slicing html/icon/panahKiri.png" alt="panah kiri"></div>
-                    <div class="right"><img src="/slicing html/icon/panahKana.png" alt="panah kanan"></div>
+                    <div class="left" onclick="btn_slide(-1)"><img src="/slicing html/icon/panahKiri.png"></div>
+                    <div class="right" onclick="btn_slide(1)"><img src="/slicing html/icon/panahKana.png"></div>
+                </div>
+            </div>
+            <div class="content" id="content-slide2">
+                <div class="content1">we're the best</div>
+                <div class="content2">provides export advice</div>
+                <div class="content3">Pellentesque convallis posuere leo faucibus mollis. Sed a laoreet augue. Etiam pretium sagittis tellus vitae consectetur.</div>
+                <div class="btn">
+                    <button>
+                        quote now
+                        <img src="/slicing html/icon/panah.png" alt="panah">
+                    </button>
+                    <div class="msc"><a href="https://youtu.be/QMkycqKDuWU"><img src="/slicing html/icon/music.png" alt="music"></div></a>
+                </div>
+                <div class="arrow">
+                    <div class="left" onclick="btn_slide(-1)"><img src="/slicing html/icon/panahKiri.png"></div>
+                    <div class="right" onclick="btn_slide(1)"><img src="/slicing html/icon/panahKana.png"></div>
+                </div>
+            </div>
+            <div class="content" id="content-slide3">
+                <div class="content1">we're the best</div>
+                <div class="content2">provides export advice</div>
+                <div class="content3">Pellentesque convallis posuere leo faucibus mollis. Sed a laoreet augue. Etiam pretium sagittis tellus vitae consectetur.</div>
+                <div class="btn">
+                    <button>
+                        quote now
+                        <img src="/slicing html/icon/panah.png" alt="panah">
+                    </button>
+                    <div class="msc"><a href="https://youtu.be/QMkycqKDuWU"><img src="/slicing html/icon/music.png" alt="music"></div></a>
+                </div>
+                <div class="arrow">
+                    <div class="left" onclick="btn_slide(-1)"><img src="/slicing html/icon/panahKiri.png"></div>
+                    <div class="right" onclick="btn_slide(1)"><img src="/slicing html/icon/panahKana.png"></div>
                 </div>
             </div>
         </main>
@@ -162,7 +200,7 @@
             <div class="is2">
                 <p>watch video</p>
                 <div class="gb">
-                    <img src="/slicing html/icon/music.png" alt="music">
+                    <a href="https://youtu.be/QMkycqKDuWU"><img src="/slicing html/icon/music.png" alt="music"></a>
                 </div>
             </div>
         </div>
@@ -230,10 +268,10 @@
                     </p>
                     <p> Maecenas</p>
                     <div class="mds">
-                        <div class="m1"><a href="#"><img src="/slicing html/icon/fb1.png" alt="fb"></div></a>
-                        <div class="m1"><a href="#"><img src="/slicing html/icon/twitter1.png" alt="twitter"></div></a>
-                        <div class="m1"><a href="#"><img src="/slicing html/icon/ig1.png" alt="ig"></div></a>
-                        <div class="m1"><a href="#"><img src="/slicing html/icon/in1.png" alt="in"></div></a>
+                        <div class="m1" id="ms1"><a href="#"><img src="/slicing html/icon/fb1.png" alt="fb"></div></a>
+                        <div class="m1" id="ms2"><a href="#"><img src="/slicing html/icon/twitter1.png" alt="twitter"></div></a>
+                        <div class="m1" id="ms3"><a href="#"><img src="/slicing html/icon/ig1.png" alt="ig"></div></a>
+                        <div class="m1" id="ms4"><a href="#"><img src="/slicing html/icon/in1.png" alt="in"></div></a>
                     </div>
                 </div>
             </div>
